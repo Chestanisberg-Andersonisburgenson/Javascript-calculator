@@ -11,7 +11,7 @@ const numberButtons =  numberWords.map((word, index: number) => (
       <button
         id={word}
         key={index}
-        className="number-button"
+        className="button"
         >{index}
       </button>
     ))
@@ -30,13 +30,14 @@ const otherButtons = Object.entries(calcButtons).map(([name, symbol]) => (
   <button
     id={name}
     key={name}
-    className="other-button"
+    className="button"
     >{symbol}
   </button>
 ))
 
   return (
   <div className="calculator">
+    <div id="display" className='display'></div>
     <div id="display"></div>
       {numberButtons}
       {otherButtons}
