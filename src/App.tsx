@@ -38,7 +38,6 @@ const otherButtons = Object.entries(calcButtons).map(([name, symbol]) => (
   return (
   <div className="calculator">
     <div id="display" className='display'></div>
-    <div id="display"></div>
       {numberButtons}
       {otherButtons}
   </div>
