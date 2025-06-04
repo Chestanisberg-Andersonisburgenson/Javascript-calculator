@@ -1,7 +1,9 @@
 .calculator {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 80px); /* 6 rows: 1=display, 2=ops, 3-6=numbers */
+  grid-auto-rows: 1fr; /* Equal height for all rows */
+  gap: 5px;
   width: 300px;
   margin: auto;
   padding: 20px;
